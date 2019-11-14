@@ -1,6 +1,6 @@
 In this example, there are 5 users being added to the table. Your query is then run. The expected result would be to return the password value for the admin user only.
 
-However, by adding 1=1, which is a true statement, all passwords are returned.
+However, by adding ```1=1```, which is a true statement, all passwords are returned.
 
 Another way to help visualize this, is to add parenthesis so that you can see how everything is evaluated.
 
