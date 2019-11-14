@@ -10,7 +10,8 @@ SELECT pass FROM users WHERE (user_name = 'admin')              OR (1=1) -- '
 ```
 So, we are selecting the password from the table where the user name is admin. We are also pulling the password from the table where ever 1=1 - which is always true. Each row is evaluated to true, thus all passwords are returned.
 
-The final -- ' is used to comment out the rest of your query.
+The final ```-- '``` is used to comment out the rest of your query.
 
-SELECT pass from users WHERE user_name = 'admin' or (1=1) -- 'and permission='superadmin'
+```SELECT pass from users WHERE user_name = 'admin' or (1=1) -- 'and permission='superadmin```
+
 Normally, (if the 1=1 hadn't been injected), you'd pull the password for the user with user_name of admin and superadmin permissions. You've now commented that out, and it isn't executed. This is how the entire table of passwords can be returned.
