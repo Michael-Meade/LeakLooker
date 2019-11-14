@@ -15,3 +15,4 @@ The final ```-- '``` is used to comment out the rest of your query.
 ```SELECT pass from users WHERE user_name = 'admin' or (1=1) -- 'and permission='superadmin```
 
 Normally, (if the 1=1 hadn't been injected), you'd pull the password for the user with user_name of admin and superadmin permissions. You've now commented that out, and it isn't executed. This is how the entire table of passwords can be returned.
+*source: https://stackoverflow.com/questions/24843689/whats-the-meaning-of-admin-or-1-1/24843726* 
